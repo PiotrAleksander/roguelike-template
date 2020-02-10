@@ -19,4 +19,5 @@ fn main() {
         .init();
 
     let mut tcod = Tcod { root };
+    tcod.root.flush();
 }
