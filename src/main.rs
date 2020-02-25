@@ -262,6 +262,9 @@ fn main() {
         .size(SCREEN_WIDTH, SCREEN_HEIGHT)
         .title("Rust/libtcod tutorial")
         .init();
+    
+     let mut tcod = Tcod { root };
+}
 
     let con = Offscreen::new(MAP_WIDTH, MAP_HEIGHT);
 
