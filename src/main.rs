@@ -319,7 +319,10 @@ fn handle_keys(tcod: &mut Tcod, game: &Game, objects: &mut Vec<Object>) -> Playe
             DidntTakeTurn
         }
     }
-    
+    let key = tcod.root.wait_for_keypress(true);
+    let player_alive = objects[PLAYER].alive;
+    match (key, key.text(), player_alive) {
+    }
     false
 }
 
